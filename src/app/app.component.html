@@ -2,12 +2,14 @@
     {{title}}
 </h1>
 <h2>
-    Name: {{name}}
+    {{name}}
 </h2>
 <div>
     <ul>
         <li *ngFor='let c of colors'>
-            {{c}} , {{c | uppercase}} , {{c | titlecase}}
+            <span (click)="showMessage($event)">
+                {{c}}
+            </span>
         </li>
     </ul>
 </div>
