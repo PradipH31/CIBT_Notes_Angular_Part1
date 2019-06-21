@@ -5,5 +5,9 @@
     Name: {{name}}
 </h2>
 <div>
-    {{colors}}
+    <ul>
+        <li *ngFor='let c of colors'>
+            {{c}}
+        </li>
+    </ul>
 </div>
