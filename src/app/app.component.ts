@@ -9,7 +9,17 @@ export class AppComponent {
   title = 'my-app';
   name = 'Hey, this app might work';
   colors = ['red', 'green', 'blue'];
+  show = true;
+  dataAction = 'Hide';
   showMessage($event) {
     this.name = 'You clicked on ' + $event.toElement.innerHTML;
+  }
+  showOrHide() {
+    this.show = !this.show;
+    if (this.dataAction === 'Show') {
+      this.dataAction = 'Hide';
+    } else if (this.dataAction === 'Hide') {
+      this.dataAction = 'Show';
+    }
   }
 }
