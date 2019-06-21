@@ -29,5 +29,5 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 
 ## Notes from the programmer
 
-use ng new appName to create the app
-use ng serve to run the server
+use ng new appName to create the app\
+use ng serve to run the server\
