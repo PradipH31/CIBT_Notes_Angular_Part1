@@ -7,15 +7,14 @@ import { Property } from '../models/property';
   styleUrls: ['./property.component.css']
 })
 export class PropertyComponent implements OnInit {
-  property: Property = null;
+  properties: Array<Property> = new Array<Property>();
 
   constructor() { }
 
   ngOnInit() {
-    this.property = new Property();
-    this.property.id = 1;
-    this.property.name = "Nice Bunglow";
-    this.property.price = 234000000;
+    this.properties.push(new Property(1, 'Nice Bunglaow', 250000));
+    this.properties.push(new Property(2, 'Nice Building', 150000));
+    this.properties.push(new Property(3, 'Nice Office', 250010));
   }
 
 }

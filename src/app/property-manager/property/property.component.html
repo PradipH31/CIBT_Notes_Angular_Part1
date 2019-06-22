@@ -1,6 +1,16 @@
-<h1>
-    Name: {{property.name}}
-</h1>
-<h2>
-    Price: {{property.price | currency:'NPR'}}
-</h2>
+<table class="table table-bordered table-striped table-hover">
+    <thead>
+        <tr>
+            <th>Id</th>
+            <th>Name</th>
+            <th>Price</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let property of properties">
+            <td>{{property.id}}</td>
+            <td>{{property.name}}</td>
+            <td>{{property.price}}</td>
+        </tr>
+    </tbody>
+</table>
