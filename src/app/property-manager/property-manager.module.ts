@@ -6,6 +6,8 @@ import { PropertyComponent } from './property/property.component';
   declarations: [PropertyComponent],
   imports: [
     CommonModule
+  ], exports: [
+    PropertyComponent
   ]
 })
 export class PropertyManagerModule { }
