@@ -31,5 +31,6 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 
 use ng new appName to create the app\
 use ng serve to run the server\
-use ng generate component Navbar to create a component called Navbar
-Use ng generate module PropertyManager to create a module called property manager
+use ng generate component Navbar to create a component called Navbar\
+Use ng generate module PropertyManager to create a module called property manager\
+Use ng generate class property-manager/models/Property to create class inside property manager/property
