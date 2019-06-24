@@ -2,8 +2,18 @@
 <h1>
     {{title}}
 </h1>
+<style>
+    .myClass {
+        padding: 10px;
+        border: 1px solid red;
+    }
+    
+    .test {
+        background: green;
+    }
+</style>
 <ul>
-    <li [style.color]="c" *ngFor="let c of colors">{{c}}</li>
+    <li [className]="'myClass test'" [style.color]="c" *ngFor="let c of colors">{{c}}</li>
 </ul>
 <form action="">
     <input type="text" name="price" [(ngModel)]="price">
