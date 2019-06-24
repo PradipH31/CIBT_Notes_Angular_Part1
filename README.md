@@ -29,6 +29,10 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 
 ## Notes from the programmer
 
+Module for a part(for example:books,emplaoyees)\
+Class as object definition
+Component as part of module(index,detail,add,edit)
+
 use ng new appName to create the app\
 use ng serve to run the server\
 use ng generate component Navbar to create a component called Navbar\
