@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 import { NavbarComponent } from './shared/navbar/navbar.component';
 import { LoginComponent } from './auth/login/login.component';
 import { CustomerModule } from './customer/customer.module';
+import { FormsModule } from "@angular/forms"
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { CustomerModule } from './customer/customer.module';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    CustomerModule
+    CustomerModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
