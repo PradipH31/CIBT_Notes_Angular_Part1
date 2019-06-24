@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute } from '@angular/router';
 
 @Component({
   selector: 'app-customer-detail',
@@ -7,9 +8,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CustomerDetailComponent implements OnInit {
 
-  constructor() { }
+  id: number = 0;
+
+  constructor(private router: ActivatedRoute) { }
 
   ngOnInit() {
+    this.router.params.subscribe(param => {
+      this.id = param['id'];
+    });
   }
 
 }
