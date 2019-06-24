@@ -11,6 +11,8 @@ export class AppComponent {
   colors = ['red', 'green', 'blue'];
   show = true;
   dataAction = 'Hide';
+  price = 0;
+  quantity = 0;
   showMessage($event) {
     this.name = 'You clicked on ' + $event.toElement.innerHTML;
   }

@@ -3,6 +3,10 @@
     {{title}}
 </h1>
 <form action="">
-    <input type="text" name="name" [(ngModel)]="title">
+    <input type="text" name="price" [(ngModel)]="price">
+    <input type="text" name="quantity" [(ngModel)]="quantity">
+    <h2>
+        Total: {{price * quantity}}
+    </h2>
 </form>
 <router-outlet></router-outlet>
