@@ -34,6 +34,7 @@ Class as object definition\
 Component as part of module(index,detail,add,edit)\
 As services are injectable they can be initialized when components are called\
 service can be directly called from component.html\
+Import RouterModule in components that require links\
 \
 use ng new appName to create the app\
 use ng serve to run the server\

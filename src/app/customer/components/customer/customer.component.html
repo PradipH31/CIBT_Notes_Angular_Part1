@@ -17,7 +17,9 @@
                 {{customer.id}}
             </td>
             <td>
-                {{customer.firstName}} {{customer.lastName}}
+                <a routerLink="/customers/detail/{{customer.id}}">
+                  {{customer.firstName}} {{customer.lastName}}
+                </a>
             </td>
             <td>
                 {{customer.email}}
