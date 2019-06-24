@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { CustomerService } from '../../services/customer.service';
+import { Customer } from '../../models/customer';
 
 @Component({
   selector: 'app-customer',
@@ -7,9 +9,26 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CustomerComponent implements OnInit {
 
-  constructor() { }
+  constructor(private customerService: CustomerService) { }
 
   ngOnInit() {
+    var customer: Customer = new Customer();
+    customer.id = 1;
+    customer.firstName = 'Aakaash';
+    customer.lastName = 'Karki';
+    customer.email = 'aakash@gmail.com';
+    customer.contactNo = '9198021872';
+    customer.status = true;
+    this.customerService.save(customer);
+
+    customer = new Customer();
+    customer.id = 2;
+    customer.firstName = 'Aakaash';
+    customer.lastName = 'Karki';
+    customer.email = 'aakash@gmail.com';
+    customer.contactNo = '9198021872';
+    customer.status = false;
+    this.customerService.save(customer);
   }
 
 }

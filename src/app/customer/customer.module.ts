@@ -6,6 +6,9 @@ import { CustomerComponent } from './components/customer/customer.component';
   declarations: [CustomerComponent],
   imports: [
     CommonModule
+  ],
+  exports: [
+    CustomerComponent
   ]
 })
 export class CustomerModule { }
