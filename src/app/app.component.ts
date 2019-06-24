@@ -24,4 +24,7 @@ export class AppComponent {
       this.dataAction = 'Show';
     }
   }
+  showTotal() {
+    alert(this.price * this.quantity);
+  }
 }

@@ -19,7 +19,9 @@
     <input type="text" name="price" [(ngModel)]="price">
     <input type="text" name="quantity" [(ngModel)]="quantity">
     <h2>
-        Total: {{price * quantity}}
+        Total:
+        <span *ngIf="(price*quantity)<50">{{price * quantity}}</span>
     </h2>
+    <button (click)="showTotal()">Show</button>
 </form>
 <router-outlet></router-outlet>
