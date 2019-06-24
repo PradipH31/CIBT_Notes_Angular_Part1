@@ -36,6 +36,7 @@ As services are injectable they can be initialized when components are called\
 service can be directly called from component.html\
 Import RouterModule in components that require links\
 \
+Use [(ngModel)]="" for two way binding\
 use ng new appName to create the app\
 use ng serve to run the server\
 use ng generate component Navbar to create a component called Navbar\
