@@ -41,4 +41,5 @@ use ng new appName to create the app\
 use ng serve to run the server\
 use ng generate component Navbar to create a component called Navbar\
 Use ng generate module PropertyManager to create a module called property manager\
-Use ng generate class property-manager/models/Property to create class inside property manager/property
+Use ng generate class property-manager/models/Property to create class inside property manager/property\
+Use ng g guard auth/auth to create authentication guard(CanActivate())
