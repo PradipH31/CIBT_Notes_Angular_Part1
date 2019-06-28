@@ -2,7 +2,7 @@
     Add Customer
 </h1>
 <form [formGroup]="customerForm">
-    <div class="form-group">
+    <div class="form-group" [ngClass]="(customerForm.get('firstName').errors)?'has-error':''">
         <label>First Name</label>
         <input type="text" formControlName="firstName" name="firstName" required class="form-control">
         <div *ngIf="customerForm.get('firstName').dirty">
