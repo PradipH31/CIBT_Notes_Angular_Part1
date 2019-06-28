@@ -16,6 +16,11 @@ const routes: Routes = [
     pathMatch: 'full'
   },
   {
+    path: 'add',
+    redirectTo: '',
+    pathMatch: 'full'
+  },
+  {
     path: 'customers',
     loadChildren:
       () => import('./customer/customer.module')
