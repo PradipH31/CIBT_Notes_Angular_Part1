@@ -6,4 +6,11 @@ import { Injectable } from '@angular/core';
 export class AuthService {
 
   constructor() { }
+
+  loggedInUser(): boolean {
+    if (!!localStorage.getItem('token')) {
+      return true;
+    }
+    return false;
+  }
 }
