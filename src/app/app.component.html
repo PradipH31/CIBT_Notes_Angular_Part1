@@ -1,27 +1,3 @@
 <navbar></navbar>
-<h1>
-    {{title}}
-</h1>
-<style>
-    .myClass {
-        padding: 10px;
-        border: 1px solid red;
-    }
-    
-    .test {
-        background: green;
-    }
-</style>
-<ul>
-    <li [className]="'myClass test'" [style.color]="c" *ngFor="let c of colors">{{c}}</li>
-</ul>
-<form action="">
-    <input type="text" name="price" [(ngModel)]="price">
-    <input type="text" name="quantity" [(ngModel)]="quantity">
-    <h2>
-        Total:
-        <span *ngIf="(price*quantity)<50">{{price * quantity}}</span>
-    </h2>
-    <button (click)="showTotal()">Show</button>
-</form>
+
 <router-outlet></router-outlet>
