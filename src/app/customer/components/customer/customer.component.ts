@@ -12,7 +12,7 @@ export class CustomerComponent implements OnInit {
   constructor(private customerService: CustomerService) { }
 
   ngOnInit() {
-    var customer: Customer = new Customer();
+    let customer: Customer = new Customer();
     customer.id = 1;
     customer.firstName = 'Aakaash';
     customer.lastName = 'Karki';

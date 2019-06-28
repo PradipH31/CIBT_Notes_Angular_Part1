@@ -8,13 +8,13 @@ import { ActivatedRoute } from '@angular/router';
 })
 export class CustomerDetailComponent implements OnInit {
 
-  id: number = 0;
+  id = 0;
 
   constructor(private router: ActivatedRoute) { }
 
   ngOnInit() {
     this.router.params.subscribe(param => {
-      this.id = param['id'];
+      this.id = param.id;
     });
   }
 

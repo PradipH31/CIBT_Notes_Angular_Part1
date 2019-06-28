@@ -4,9 +4,15 @@ import { CustomerComponent } from './components/customer/customer.component';
 import { CustomerDetailComponent } from './components/customer-detail/customer-detail.component';
 
 const routes: Routes = [
-    { path: '', component: CustomerComponent },
-    { path: 'detail/:id', component: CustomerDetailComponent }
+    {
+        path: '',
+        children: [
+            { path: '', component: CustomerComponent },
+            { path: 'detail/:id', component: CustomerDetailComponent }
+        ]
+    }
 ];
+
 @NgModule({
     imports: [RouterModule.forChild(routes)],
     exports: [RouterModule]

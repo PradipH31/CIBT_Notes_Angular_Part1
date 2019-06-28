@@ -44,4 +44,8 @@ Use ng generate module PropertyManager to create a module called property manage
 Use ng generate class property-manager/models/Property to create class inside property manager/property\
 Use ng g guard auth/auth to create authentication guard(CanActivate())\
 \
-Routing will not work for multiple links in a uri
+Routing will not work for multiple links in a uri\
+\
+Using lazyload feature - loading chidlren routing(customer-routing is imported in customer module). Here, mod represents module\
+Remember to redirect the corresponding url in app routing to ''\
+path:'',loadChildren:() => import('./customer/customer.module').then(mod => mod.CustomerModule),canActivate: [AuthGuard]
