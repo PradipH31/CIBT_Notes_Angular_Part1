@@ -1,4 +1,4 @@
-import { Directive, ElementRef, HostListener } from '@angular/core';
+import { Directive, ElementRef, HostListener, Input } from '@angular/core';
 import { ElementSchemaRegistry } from '@angular/compiler';
 
 @Directive({
@@ -7,10 +7,11 @@ import { ElementSchemaRegistry } from '@angular/compiler';
 export class HighlighterDirective {
 
   color = 'white';
-  backgroundColor = 'green';
+  @Input() highlightColor = 'green';
 
   constructor(private el: ElementRef) {
-    this.el.nativeElement.style.backgroundColor = this.backgroundColor;
+    this.changeColor();
+    this.highlight();
   }
 
   @HostListener('click') onclick() {
@@ -20,6 +21,7 @@ export class HighlighterDirective {
   @HostListener('mouseenter') onMouseEnter() {
     this.color = 'red';
     this.changeColor();
+    this.highlight();
   }
 
   @HostListener('mouseleave') onmouseleave() {
@@ -29,6 +31,10 @@ export class HighlighterDirective {
 
   changeColor() {
     this.el.nativeElement.style.color = this.color;
+  }
+
+  highlight() {
+    this.el.nativeElement.style.backgroundColor = this.highlightColor;
   }
 
 }
