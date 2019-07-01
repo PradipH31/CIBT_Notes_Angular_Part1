@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { HttpClientModule } from '@angular/common/http';
 
 @Component({
   selector: 'app-root',
@@ -25,7 +26,11 @@ export class AppComponent {
       this.dataAction = 'Show';
     }
   }
+  constructor(private http: HttpClientModule) { }
   showTotal() {
     alert(this.price * this.quantity);
+  }
+  scrap() {
+
   }
 }
