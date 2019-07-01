@@ -29,15 +29,8 @@ export class AppComponent implements OnInit {
     }
   }
   constructor(private http: HttpClient) { }
-  ngOnInit(): void {
-    this.scrap();
-  }
+  ngOnInit(): void { }
   showTotal() {
     alert(this.price * this.quantity);
-  }
-  scrap() {
-    this.http.get<Array<Customer>>('/data/customers.json').subscribe(data => {
-      this.customers = data;
-    });
   }
 }
