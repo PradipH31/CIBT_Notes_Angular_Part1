@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { HttpClientModule } from '@angular/common/http';
+import { HttpClient } from '@angular/common/http';
 
 @Component({
   selector: 'app-root',
@@ -26,11 +26,15 @@ export class AppComponent {
       this.dataAction = 'Show';
     }
   }
-  constructor(private http: HttpClientModule) { }
+  constructor(private http: HttpClient) {
+    this.scrap();
+  }
   showTotal() {
     alert(this.price * this.quantity);
   }
   scrap() {
-
+    this.http.get('/data/customers.json').subscribe(data => {
+      console.log(data);
+    });
   }
 }
