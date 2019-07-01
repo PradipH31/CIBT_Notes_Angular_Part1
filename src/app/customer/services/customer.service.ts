@@ -10,7 +10,7 @@ export class CustomerService {
 
   private customerList: Array<Customer> = new Array<Customer>();
 
-  public getAll(): Observable<Array<Customer>> {
+  public getAll() {
     return this.http.get<Array<Customer>>('/data/customers.json');
   }
 

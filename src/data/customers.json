@@ -1,20 +1,20 @@
 [{
         "id": "1",
-        "firstName": "Ramesh",
+        "fName": "Ramesh",
         "lastName": "Chaudhary",
         "email": "ramesh@gmail.com",
         "contactNo": "879867876"
     },
     {
         "id": "3",
-        "firstName": "Suresh",
+        "fName": "Suresh",
         "lastName": "Chandra",
         "email": "suresh@gmail.com",
         "contactNo": "879867876"
     },
     {
         "id": "3",
-        "firstName": "Rabin",
+        "fName": "Rabin",
         "lastName": "Baniya",
         "email": "rabin@gmail.com",
         "contactNo": "879867876"
