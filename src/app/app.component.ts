@@ -9,6 +9,7 @@ export class AppComponent {
   title = 'my-app';
   name = 'Hey, this app might work';
   colors = ['red', 'green', 'blue'];
+  color = 'purple';
   show = true;
   dataAction = 'Hide';
   price = 0;
