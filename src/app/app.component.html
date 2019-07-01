@@ -3,4 +3,9 @@
     I can't possibly highlight the text
 </p>
 <span appHighlighter [highlightColor]="'red'">Red Highlight</span>
+<ul>
+    <li *ngFor="let c of customers">
+        {{c.firstName}}
+    </li>
+</ul>
 <router-outlet></router-outlet>
