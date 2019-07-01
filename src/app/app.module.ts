@@ -7,7 +7,8 @@ import { NavbarComponent } from './shared/navbar/navbar.component';
 import { LoginComponent } from './auth/login/login.component';
 import { CustomerModule } from './customer/customer.module';
 import { FormsModule } from "@angular/forms";
-import { LogoutComponent } from './auth/logout/logout.component'
+import { LogoutComponent } from './auth/logout/logout.component';
+import { HighlighterDirective } from './helpers/highlighter.directive'
 
 @NgModule({
   declarations: [
@@ -15,6 +16,7 @@ import { LogoutComponent } from './auth/logout/logout.component'
     NavbarComponent,
     LoginComponent,
     LogoutComponent,
+    HighlighterDirective,
   ],
   imports: [
     BrowserModule,
